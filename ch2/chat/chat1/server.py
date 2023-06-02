@@ -2,7 +2,7 @@ import socket
 import threading
 
 ip = "127.0.0.1"
-port = 2233
+port = 1111
 # todo bug
 
 def main():

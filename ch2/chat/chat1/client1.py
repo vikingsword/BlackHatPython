@@ -2,7 +2,7 @@ import socket
 import time
 
 target_host = "127.0.0.1"
-target_port = 2233
+target_port = 1111
 
 client1 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 

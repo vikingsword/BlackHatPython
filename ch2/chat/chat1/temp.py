@@ -1,3 +1,4 @@
+import sys
 
-a = input("send:")
-print(a)
+for i in sys.argv:
+    print(i)

@@ -6,7 +6,7 @@ import sys
 import textwrap
 import threading
 
-
+# todo bug
 def execute(cmd):
     cmd = cmd.strip()
     if not cmd:
@@ -112,9 +112,9 @@ if __name__ == '__main__':
             echo 'ABC' | ./netcat.py -t 192.168.110.34 -p 135               # echo text to server port 135
             netcat.py -t 192.168.110.34 -p 5555                             # connect to server
         '''))
-    parser.add_argument('-c', '--command', action='store_ture', help='command shell')
+    parser.add_argument('-c', '--command', action='store_true', help='command shell')
     parser.add_argument('-e', '--execute', help='execute specified command')
-    parser.add_argument('-l', '--listen', action='store_ture', help='listen')
+    parser.add_argument('-l', '--listen', action='store_true', help='listen')
     parser.add_argument('-p', '--port', type=int, default=5555, help='specified prot')
     parser.add_argument('-t', '--target', default='192.168.110.34', help='specified ip')
     parser.add_argument('-u', '--upload', help='upload file')

@@ -24,7 +24,7 @@ def start_server():
     # 创建TCP套接字
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server_host = "127.0.0.1"  # 服务端IP地址
-    server_port = 8888  # 服务端端口号
+    server_port = 2222  # 服务端端口号
 
     # 绑定地址和端口
     server_socket.bind((server_host, server_port))
